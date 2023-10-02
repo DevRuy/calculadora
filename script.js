@@ -1,7 +1,9 @@
 let res = document.getElementById('res')
+let funcao = String(res.value)
 
 
 function insert(n){
+    
     res.innerHTML += `${n}`
     
 }
@@ -19,10 +21,15 @@ function insertF(f){
 
 /* Voltar um */
 function back(){
-    res.innerHTML = res.substring(0, res.length -1)
+    let back = document.getElementById('res').innerHTML;
+    document.getElementById('res').innerHTML = back.substring(0, back.length -1)
+
+
+    
 }
 
 /* Limpar */
 function clean(){
+    funcao = []
     res.innerHTML = ''
-}
+}''

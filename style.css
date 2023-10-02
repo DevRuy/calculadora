@@ -45,9 +45,7 @@ table{
     
 }
 
-#res::before{
-    content: '';
-}
+
 tr td{
     border: 1px solid black;
     border-radius: 15px;
